@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Diseño de Canva</title>
+    <title>CASINO RED FORTUNA</title>
 
-    <!-- Código del Píxel de Meta -->
+  <!-- Código del Píxel de Meta -->
     <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -23,19 +23,6 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=3932925927024714&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-     <!-- Botón con rastreo de Meta -->
-    <button onclick="solicitarFichas('https://wa.link/opfvr7')" style="margin-top: 20px; padding: 10px 20px; font-size: 1em; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Solicita tus 100 Fichas Gratis
-    </button>
-
-    <script>
-        // Función que rastrea el evento de clic en Meta
-        function solicitarFichas('https://wa.link/opfvr7') {
-            fbq('trackCustom', 'SolicitarFichas'); // Evento personalizado para Meta
-            alert("¡Gracias! Tu solicitud ha sido enviada.");
-        }
-    </script>
-</body>
 </head>
 <body>
     <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
@@ -45,4 +32,18 @@ src="https://www.facebook.com/tr?id=3932925927024714&ev=PageView&noscript=1"
         src="https://www.canva.com/design/DAGSbq9m5xw/r2z7aX6_knFPamOw4lRsvA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
       </iframe>
     </div>
+
+    <!-- Botón de WhatsApp con evento de rastreo -->
+    <a href="https://wa.me/123456789?text=Quiero%20solicitar%20mi%20usuario%20y%20reclamar%20mis%20100%20fichas%20gratis"
+       onclick="rastreoWhatsApp()" target="_blank" style="display: inline-block; margin-top: 20px; padding: 10px 20px; font-size: 1em; background-color: #25D366; color: white; text-decoration: none; border-radius: 5px;">
+        Solicita tu usuario y reclama tus 100 fichas gratis
+    </a>
+
+    <script>
+        // Función para rastrear clics en el enlace de WhatsApp
+        function rastreoWhatsApp() {
+            fbq('track', 'Contact'); // Evento de Meta para rastrear contactos
+        }
+    </script>
+</body>
 </html>
