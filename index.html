@@ -2,72 +2,138 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Móvil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>Casino Red Fortuna</title>
     <style>
-        /* Estilos para adaptar a dispositivos móviles */
+        /* Fondo del casino */
         body {
-            width: 100%;
-            height: 100vh;
             margin: 0;
             padding: 0;
-            background-image: url('fondo.jpg'); /* reemplaza fondo.jpg con la ruta de tu imagen */
+            background-image: url('file:///C:/Users/Admin/Desktop/RF/fondo.jpg'); /* Reemplaza con la URL de la imagen de fondo del casino */
             background-size: cover;
             background-position: center;
-        }
-        
-        .contenedor {
-            width: 90%;
-            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+            color: white;
             text-align: center;
-            padding: 20px;
         }
-        
-        .caja-texto {
-            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-            padding: 20px;
-            border-radius: 20px; /* Esquinas más redondeadas */
-            display: inline-block; /* Ajusta el ancho al contenido */
-            margin-bottom: 20px;
+
+        /* Cuadro de bienvenida */
+        .welcome-box {
+            background-color: rgba(1, 0, 0, 0.4); /* Fondo gris transparente */
+            color: Green;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 70%;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 2px white;
+            font-weight: bold;
+            margin-top: 20px;
         }
-        
-        .titulo {
-            font-size: 36px; /* Tamaño de fuente */
-            font-weight: Arial; /* Negrita */
-            color: #deb70c; /* Color blanco */
-            margin-bottom: 20px;
-        }
-        
-        .texto {
-            font-size: 24px; /* Tamaño de fuente */
-            font-weight: Arial; /* Negrita */
-            color: #fff; /* Color blanco */
-        }
-        
-        .boton-whatsapp {
-            background-color: #25D366;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 20px; /* Tamaño de fuente */
+
+        /* Botón de WhatsApp con animación */
+        .whatsapp-button {
+            background-image: url(''); /* Reemplaza con la URL del GIF de botón de WhatsApp */
+            background-size: cover;
+            width: 200px;
+            height: 110px;
+            color: white;
             text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transition: transform 0.3s;
         }
-        
-        .boton-whatsapp:hover {
-            background-color: #deb70c;
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos de medios de pago */
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .payment-methods img {
+            width: 130px;
+            height: auto;
+            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
+            transition: transform 0.2s;
+        }
+
+        .payment-methods img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            .welcome-box {
+                font-size: 1.2em;
+            }
+
+            .whatsapp-button {
+                width: 160px;
+                height: 50px;
+                font-size: 0.9em;
+            }
+
+            .payment-methods img {
+                width: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .welcome-box {
+                font-size: 1em;
+                padding: 15px;
+            }
+
+            .whatsapp-button {
+                width: 170px;
+                height: 45px;
+                font-size: 0.8em;
+            }
+
+            .payment-methods img {
+                width: 100px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="contenedor">
-        <div class="caja-texto">
-            <h1 class="titulo">RED FORTUNA</h1>
-            <p class="texto">Solicita tu usuario gratuito. Todas las promos disponibles.</p>
-        </div>
-        <br> <!-- Espacio entre el texto y el botón -->
-        <a href="https://wa.me/543516743214" class="boton-whatsapp">QUIERO UN USUARIO</a>
+    <!-- Cuadro de bienvenida -->
+    <div class="welcome-box">
+        Bienvenidos a <strong>Casino Red Fortuna</strong>
+
+
+    </div>
+
+    <a href="https://wa.me/123456789?text=Quiero%20solicitar%20mi%20usuario%20y%20reclamar%20mis%20100%20fichas%20gratis" class="whatsapp-button">
+    <img src="https://robbu.global/wp-content/uploads/2021/04/ilustra_02.png" alt="Solicita tu usuario y reclama tus 100 fichas gratis" style="width: 90%; height: auto;">
+    <!-- Cuadro de bienvenida -->
+    <div class="welcome-box">
+        	 <strong> <strong> <strong>	 <strong>SOLICITA TU USUARIO Y OBTENE 100 FICHAS GRATIS</strong>
+
+</a>
+
+    <!-- Medios de pago -->
+    <div class="payment-methods">
+        <img src="file:///C:/Users/Admin/Desktop/RF/mercado%20pago.png"> <!-- Reemplaza con URL del logo de MercadoPago -->
+        <img src="file:///C:/Users/Admin/Desktop/RF/pngwing.com.png"> <!-- Reemplaza con URL del logo de Rapipago -->
+        <img src="file:///C:/Users/Admin/Desktop/RF/pngwing.com%20(1).png"> <!-- Reemplaza con URL del logo de Visa -->
+        <img src="file:///C:/Users/Admin/Desktop/RF/pngwing.com%20(2).png"> <!-- Reemplaza con URL del logo de Mastercard -->
+        <img src="file:///C:/Users/Admin/Desktop/RF/pngwing.com%20(3).png"> <!-- Reemplaza con URL del logo de Criptomonedas -->
     </div>
 </body>
 </html>
