@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Móvil</title>
+    <style>
+        /* Estilos para adaptar a dispositivos móviles */
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg'); /* reemplaza fondo.jpg con la ruta de tu imagen */
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .contenedor {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .caja-texto {
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            padding: 20px;
+            border-radius: 20px; /* Esquinas más redondeadas */
+            display: inline-block; /* Ajusta el ancho al contenido */
+            margin-bottom: 20px;
+        }
+        
+        .titulo {
+            font-size: 36px; /* Tamaño de fuente */
+            font-weight: Arial; /* Negrita */
+            color: #32cdff; /* Color blanco */
+            margin-bottom: 20px;
+        }
+        
+        .texto {
+            font-size: 24px; /* Tamaño de fuente */
+            font-weight: Arial; /* Negrita */
+            color: #fff; /* Color blanco */
+        }
+        
+        .boton-whatsapp {
+            background-color: #25D366;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px; /* Tamaño de fuente */
+            text-decoration: none;
+        }
+        
+        .boton-whatsapp:hover {
+            background-color: #1a7f37;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja-texto">
+            <h1 class="titulo">RED FORTUNA</h1>
+            <p class="texto">Solicita tu usuario gratuito. Todas las promos disponibles.</p>
+        </div>
+        <br> <!-- Espacio entre el texto y el botón -->
+        <a href="https://wa.me/543516743214" class="boton-whatsapp">QUIERO UN USUARIO</a>
+    </div>
+</body>
+</html>
